@@ -11,7 +11,9 @@ function ImgSlider() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true
+        autoplay: true,
+        arrows: false,
+        
     }
   return (
 
@@ -56,7 +58,7 @@ const Wrap = styled.div`
     cursor: pointer;
 
     img {
-        border: 4px solid transparent; 
+        border: 4px transparent solid; 
         width: 100%;
         height: 100%;
         border-radius: 4px;
@@ -66,7 +68,7 @@ const Wrap = styled.div`
 
     }
     &:hover {
-        border: 4px solid rgba(249, 249, 249, 0.8);
+        border: 3px solid rgba(249, 249, 249, 0.8);
         transform: scale(1.05);
         box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
         rgb(0 0 0 / 72%) 0px 30px 22px -10px;
